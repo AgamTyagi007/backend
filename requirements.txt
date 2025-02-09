@@ -4,5 +4,6 @@ openai-whisper
 numpy
 soundfile
 pydub
+ffmpeg
 ffmpeg-python
 
