@@ -6,4 +6,5 @@ soundfile
 pydub
 ffmpeg
 ffmpeg-python
+gunicorn
 
