@@ -1,0 +1,25 @@
+{
+  "build": {
+    "nixpacks": {
+      "plan": {
+        "phases": {
+          "setup": {
+            "nixPkgs": ["ffmpeg", "gcc"]
+          },
+          "install": {
+            "cmds": [
+              "python -m venv /opt/venv",
+              ". /opt/venv/bin/activate",
+              "pip install --no-cache-dir -r requirements.txt"
+            ]
+          },
+          "build": {
+            "cmds": [
+              "apt-get update && apt-get install -y ffmpeg"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
