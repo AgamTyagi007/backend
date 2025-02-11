@@ -7,4 +7,5 @@ pydub
 ffmpeg
 ffmpeg-python
 gunicorn
+imageio[ffmpeg]
 
